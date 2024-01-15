@@ -1,6 +1,6 @@
 <?php
 
-$to = 'binesschama1127@gmail.com';
+$to = 'info@speedpayzm.com';
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
 $from = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -8,7 +8,7 @@ $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_SPECIAL_CHARS);
 
 if (filter_var($from, FILTER_VALIDATE_EMAIL)) {
     $headers = [
-        'From' => ($name ? "<$name> " : '') . $from,
+        'From' => ($name ? "$name " : '') . $from,
         'X-Mailer' => 'PHP/' . phpversion()
     ];
 

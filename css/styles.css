@@ -205,7 +205,14 @@ address {
   font-style: normal;
   line-height: inherit;
 }
-
+#contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
 ol,
 ul {
   padding-left: 2rem;
@@ -377,11 +384,11 @@ button {
   font-weight: 700;
   border-radius: 0px;
   margin-bottom: 9px;
-  background-color: #495057;
+  background-color: #d2b448;
   text-transform: uppercase;
 }
 button:hover{
-  background-color: #0c4128;
+  background-color: green;
 }
 button:focus:not(:focus-visible) {
   outline: 0;
